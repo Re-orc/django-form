@@ -1,0 +1,10 @@
+1. fields속성 특수 값 '__all__'으로 설정하여 모델의 모든 필드를 사용해야 함을 나타낸다. 
+
+2. exclude속성 모델에서 제외 할 필드를 설정 
+<pre><span></span><span class="kn">from</span> <span class="nn">django.forms</span> <span class="k">import</span> <span class="n">ModelForm</span>
+
+<span class="k">class</span> <span class="nc">AuthorForm</span><span class="p">(</span><span class="n">ModelForm</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Author</span>
+        <span class="n">fields</span> <span class="o">=</span> <span class="s1">'__all__'</span>
+</pre>
