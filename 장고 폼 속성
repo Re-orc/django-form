@@ -1,5 +1,5 @@
 
-* fields속성 특수 값 '__all__'으로 설정하여 모델의 모든 필드를 사용해야 함을 나타낸다. 
+>fields속성 특수 값 '__all__'으로 설정하여 모델의 모든 필드를 사용해야 함을 나타낸다. 
 
 from django.forms import ModelForm
 
