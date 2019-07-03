@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("form").submit(function(event){
-    event.preventDefault();
-    var data = $(this).serialize();
+    event.preventDefault(); // 브라우저의 이벤트를 해제 시킨다.
+    var data = $(this).serialize(); // form에서 입력된 데이터를 가지고 온다.
     
     $.ajax({
     url: "{url comments:test }",
