@@ -1,0 +1,18 @@
+$(document).ready(function(){
+  $("form").submit(function(event){
+    event.preventDefault();
+    var data = $(this).serialize();
+    
+    $.ajax({
+    url: "{url comments:test }",
+    type: "POST",
+    data: data:
+    success: function(response){
+   $("form")[0].reset();
+    },
+    error: function(response){
+      console.log(response
+      }
+    });
+  });
+});
